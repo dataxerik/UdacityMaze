@@ -56,8 +56,11 @@ MonoBehaviour:
     type: 2}
   passagePrefab: {fileID: 114586421216739410, guid: c779ad1001a672e4d8565e7f20a5ecec,
     type: 2}
-  wallPrefab: {fileID: 114971094668669654, guid: 1835464d012b3a34fadc64a3a7f8f845,
-    type: 2}
+  wallPrefabs:
+  - {fileID: 114971094668669654, guid: 1835464d012b3a34fadc64a3a7f8f845, type: 2}
+  - {fileID: 114905272875428110, guid: 512b1e3cbfe00b841bb43a39c6bc867c, type: 2}
+  - {fileID: 114659548258255914, guid: 11a037edc43331f4a9e8ab5dad4746aa, type: 2}
+  - {fileID: 114789479874414302, guid: 5fc576604693f094e83d16bf63ec88ee, type: 2}
   size:
     x: 20
     z: 20
