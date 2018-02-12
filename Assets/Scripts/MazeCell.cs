@@ -5,6 +5,7 @@ using UnityEngine;
 public class MazeCell : MonoBehaviour {
 
 	public IntVector2 coordinates;
+	public MazeRoom room;
 	private int initializedEdgeCount;
 
 	private MazeCellEdge[] edges = new MazeCellEdge[MazeDirections.Count];
