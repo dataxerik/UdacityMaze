@@ -33,10 +33,17 @@ public static class MazeDirections {
 	};
 
 	private static Quaternion[] rotations = {
-		Quaternion.identity,
-		Quaternion.Euler(0f, 90f, 0f),
-		Quaternion.Euler(0f, 180f, 0f),
-		Quaternion.Euler(0f, 270f, 0f)
+		Quaternion.Euler(-90f, -90f, 0f),
+		Quaternion.Euler(-90f, -180f, 0f),
+		Quaternion.Euler(-90f, -270f, 0f),
+		Quaternion.Euler(-90f, 0f, 0f)
+	};
+
+	private static Vector3[] offset = {
+		new Vector3(-.5f, 0f, -.5f),
+		new Vector3(.5f, 0f, -.5f),
+		new Vector3(.5f, 0f, .5f),
+		new Vector3(-.5f, 0f, -.5f)
 	};
 
 	public static MazeDirection GetOpposite(this MazeDirection direction) {
@@ -49,5 +56,9 @@ public static class MazeDirections {
 
 	public static Quaternion ToRotation(this MazeDirection direction) {
 		return rotations [(int)direction];
+	}
+
+	public static Vector3 ToOffset(this MazeDirection direction) {
+		return offset [(int)direction];
 	}
 }

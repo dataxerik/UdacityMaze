@@ -16,7 +16,10 @@ public abstract class MazeCellEdge : MonoBehaviour {
 		cell.SetEdge (direction, this);
 		transform.parent = cell.transform;
 		transform.localPosition = Vector3.zero;
+		//Vecotr3 wallRotation = direction.ToRotation
 		transform.localRotation = direction.ToRotation ();
+		transform.localPosition = direction.ToOffset ();
+		//transform.localRotation.x = 
 	}
 		
 }
