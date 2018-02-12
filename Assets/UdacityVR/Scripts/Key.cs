@@ -20,9 +20,9 @@ public class Key : MonoBehaviour
         // Call the Unlock() method on the Door
         // Set the Key Collected Variable to true
         // Destroy the key. Check the Unity documentation on how to use Destroy
-		GameObject test = Instantiate(keyProofPrefab);
-		test.transform.position = this.transform.position;
-		test.transform.rotation = Quaternion.Euler (new Vector3 (-90, 0, 0));
+		GameObject key = Instantiate(keyProofPrefab);
+		key.transform.position = this.transform.position;
+		key.transform.rotation = Quaternion.Euler (new Vector3 (-90, 0, 0));
 		Door.Unlock ();
 		Destroy (this.gameObject);
     }
